@@ -10,3 +10,7 @@
 ## Day Three
 - Part One: 693486
 - Part Two: 3379326
+
+## Day Four
+- Part One: 50008
+- Part Two: 17408

@@ -2,6 +2,7 @@ package solve
 
 import (
 	"fmt"
+
 	"github.com/etrexel/advent-of-code-2021/internal/solutions"
 )
 
@@ -42,6 +43,16 @@ func Run(c *ConfigOptions) error {
 		fmt.Printf("Day Three Part One: %d\n", result)
 		result = solutions.DayThreePartTwo(input)
 		fmt.Printf("Day Three Part Two: %d\n", result)
+		break
+	case 4:
+		bingoNumbers, bingoCards, err := solutions.DayFourReadInput(c.InputPath + "day_four.txt")
+		if err != nil {
+			return err
+		}
+		result := solutions.DayFourPartOne(bingoNumbers, bingoCards)
+		fmt.Printf("Day Four Part One: %d\n", result)
+		result = solutions.DayFourPartTwo(bingoNumbers, bingoCards)
+		fmt.Printf("Day Four Part Two: %d\n", result)
 		break
 	default:
 		fmt.Println("Invalid day")

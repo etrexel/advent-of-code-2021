@@ -2,16 +2,16 @@ package main
 
 import (
 	"fmt"
-	"github.com/etrexel/advent-of-code-2021/internal/common"
 	"os"
 
+	"github.com/etrexel/advent-of-code-2021/internal/common"
 	"github.com/spf13/cobra"
 )
 
 var rootCmdConfig = &common.ConfigOptions{}
 
 var rootCmd = &cobra.Command{
-	Use: "aoc",
+	Use:   "aoc",
 	Short: "Runs Advent of Code solutions",
 }
 

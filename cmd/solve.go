@@ -5,17 +5,17 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var SolveConfig = &solve.ConfigOptions {
+var SolveConfig = &solve.ConfigOptions{
 	ConfigOptions: rootCmdConfig,
 }
 
 func solveCmd() *cobra.Command {
 	cmd := &cobra.Command{
-		Use: "solve -d 1",
+		Use:     "solve -d 1",
 		Aliases: []string{"s"},
-		Short: "Solve a day's solution",
-		Long: "Run the solution for a particular day",
-		RunE: solveRun,
+		Short:   "Solve a day's solution",
+		Long:    "Run the solution for a particular day",
+		RunE:    solveRun,
 	}
 
 	cmd.Flags().IntVarP(&SolveConfig.Day, "day", "d", 0, "Day to run solution for")
