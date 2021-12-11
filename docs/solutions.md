@@ -14,3 +14,7 @@
 ## Day Four
 - Part One: 50008
 - Part Two: 17408
+
+## Day Five
+- Part One: 6283
+- Part Two: 18864
