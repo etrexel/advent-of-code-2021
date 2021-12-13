@@ -64,6 +64,16 @@ func Run(c *ConfigOptions) error {
 		result = solutions.DayFivePartTwo(points)
 		fmt.Printf("Day Five Part Two: %d\n", result)
 		break
+	case 6:
+		fishValues, err := solutions.DaySixReadInput(c.InputPath + "day_six.txt")
+		if err != nil {
+			return err
+		}
+		result := solutions.DaySixPartOne(fishValues)
+		fmt.Printf("Day Six Part One: %d\n", result)
+		result = solutions.DaySixPartTwo(fishValues)
+		fmt.Printf("Day Six Part Two: %d\n", result)
+		break
 	default:
 		fmt.Println("Invalid day")
 	}

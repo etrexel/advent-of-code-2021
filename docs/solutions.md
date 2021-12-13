@@ -18,3 +18,7 @@
 ## Day Five
 - Part One: 6283
 - Part Two: 18864
+
+## Day Six
+- Part One: 379414
+- Part Two: 1705008653296
