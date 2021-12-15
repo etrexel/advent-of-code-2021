@@ -22,3 +22,7 @@
 ## Day Six
 - Part One: 379414
 - Part Two: 1705008653296
+
+## Day Seven
+- Part One: 352707
+- Part Two: 95519693
